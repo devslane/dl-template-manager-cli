@@ -3,7 +3,6 @@
   "extends": [
     "airbnb-base",
     "prettier",
-    "plugin:node/recommended",
     "airbnb-typescript/base"
   ],
   "plugins": [
@@ -16,7 +15,8 @@
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "@typescript-eslint/indent": "off"
   },
   "parserOptions": {
       "project": "./tsconfig.json"
