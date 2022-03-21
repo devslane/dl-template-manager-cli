@@ -7,6 +7,7 @@
         "devslane-template-manager": "./build/index.js"
     },
     "scripts": {
+        "start": "node ./bin/index.js",
         "lint": "eslint --fix --ext .ts",
         "prettify": "prettier -c --write *",
         "prepare": "husky install",
@@ -18,8 +19,16 @@
         "tailwindcss",
         "nodejs"
     ],
-    "author": "Madhav Bhasin",
+    "author": "Madhav Bhasin <madhav.bhasin@devslane.com>",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/devslane/dl-template-manager-cli"
+      },
+    "bugs": {
+        "url": "https://github.com/devslane/dl-template-manager-cli/issues"
+    },
+    "homepage": "https://github.com/devslane/dl-template-manager-cli#readme",
     "devDependencies": {
         "@types/chalk": "^2.2.0",
         "@types/inquirer": "^8.2.0",
