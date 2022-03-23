@@ -22,6 +22,10 @@ export const frontendTemplates = [
         type: 'list',
         name: 'frontend_template',
         message: 'Choose the frontend template which you want to use:',
-        choices: [FrontendTemplateOptions.VITE_REACT_TAILWIND, FrontendTemplateOptions.VITE_REACT_TAILWIND_REDUX, FrontendTemplateOptions.NEXT_TAILWIND_REDUX],
+        choices: [
+            FrontendTemplateOptions.VITE_REACT_TAILWIND,
+            FrontendTemplateOptions.VITE_REACT_TAILWIND_REDUX,
+            FrontendTemplateOptions.NEXT_TAILWIND_REDUX,
+        ],
     },
 ];
