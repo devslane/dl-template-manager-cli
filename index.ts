@@ -21,6 +21,8 @@ inquirer.prompt(projectName).then((pAnswer: any) => {
                 shell.echo(chalk.green(`STARTED : Cloning ${selectedTemplate}`));
 
                 cloneTemplateCommands(projectNameA, selectedTemplate);
+
+                // ** Clone Tailwind Components
                 cloneTailwindUICommands();
 
                 shell.echo(chalk.green(`COMPLETE : Cloning ${selectedTemplate}`));

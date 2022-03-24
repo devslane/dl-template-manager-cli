@@ -62,7 +62,7 @@
         }
     },
     "lint-staged": {
-        "**/*.ts": [
+        "*.ts": [
             "npm run lint",
             "npm run prettify",
             "git add --force"
