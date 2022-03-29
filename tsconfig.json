@@ -8,6 +8,7 @@
         "skipLibCheck": true,
         "outDir": "./build",
         "importHelpers": false,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "allowJs": true
     }
 }
