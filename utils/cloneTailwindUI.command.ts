@@ -14,7 +14,7 @@ const cloneTailwindUICommands = () => {
     // ** Move required folders to the root
     shell.mv('src/shared-resources', '..');
     shell.mv('src/hooks', '..');
-    shell.mv('index.scss', '..');
+    shell.mv('src/index.scss', '..');
     shell.echo(chalk.green('COMPLETE: Cloning Shared Components'));
     shell.cd('..');
 
