@@ -18,7 +18,12 @@
     "keywords": [
         "cli",
         "devslane",
-        "tailwindcss"
+        "tailwindcss",
+        "react",
+        "vite",
+        "redux",
+        "nextjs",
+        "frontend"
     ],
     "author": "Madhav Bhasin <madhav.bhasin@devslane.com>",
     "license": "ISC",
