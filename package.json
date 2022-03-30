@@ -1,10 +1,10 @@
 {
-    "name": "devslane-template-manager-cli",
+    "name": "@devslane/template-manager-cli",
     "version": "1.0.0",
     "description": "Devslane Template Manager",
     "main": "./build/index.js",
     "bin": {
-        "devslane-template-manager": "./build/index.js"
+        "dl-template-manager": "./build/index.js"
     },
     "scripts": {
         "start": "node ./bin/index.js",
