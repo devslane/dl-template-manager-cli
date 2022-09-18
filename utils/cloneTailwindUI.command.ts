@@ -25,8 +25,8 @@ const cloneTailwindUICommands = () => {
 
     // ** Add required libraries
     shell.echo(chalk.green('STARTED: Dependencies ADD'));
-    shell.exec('yarn add -D classnames @headlessui/react @heroicons/react');
-    shell.exec('yarn add formik');
+    shell.exec('yarn add -D classnames');
+    shell.exec('yarn add formik @headlessui/react react-icons');
 
     shell.echo(chalk.green('COMPLETE: Dependencies ADD'));
 
