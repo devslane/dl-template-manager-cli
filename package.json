@@ -25,6 +25,9 @@
         "nextjs",
         "frontend"
     ],
+    "engines": {
+        "node": ">=15"
+    },
     "author": "Madhav Bhasin <madhav.bhasin@devslane.com>",
     "license": "ISC",
     "repository": {
