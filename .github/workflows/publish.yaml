@@ -1,4 +1,4 @@
-name: "Publish NPM package"
+name: "Publish @devslane/template-manager-cli"
 
 on:
   pull_request:
