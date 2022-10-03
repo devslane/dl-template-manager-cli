@@ -1,6 +1,6 @@
 {
     "name": "@devslane/template-manager-cli",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Devslane Template Manager",
     "main": "./build/index.js",
     "bin": {
