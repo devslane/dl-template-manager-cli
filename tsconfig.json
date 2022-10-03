@@ -9,6 +9,10 @@
         "outDir": "./build",
         "importHelpers": false,
         "moduleResolution": "node",
-        "allowJs": true
+        "allowJs": true,
+        "lib": ["es6", "es2015", "dom"],
+        "declaration": true,
+        "types": ["node"],
+        "resolveJsonModule": true
     }
 }
