@@ -2,12 +2,24 @@
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import shell from 'shelljs';
+import figlet from 'figlet';
+import clear from 'clear';
 import cloneTailwindUICommands from './utils/cloneTailwindUI.command';
 import cloneTemplateCommands from './utils/cloneTemplate.command';
 import { FrameworkOptions } from './utils/enums';
 import { frameworkQuestion, frontendTemplates, projectName } from './utils/options';
 
-shell.echo(chalk.green('Welcome to Devslane Template Manager'));
+shell.config.silent = true;
+
+clear();
+
+shell.echo(
+  chalk.red(
+    figlet.textSync('DevsLane', { horizontalLayout: 'full' })
+  )
+);
+
+shell.echo(chalk.green('Welcome to DevsLane Template Manager'));
 
 inquirer.prompt(projectName).then((pAnswer: any) => {
     const projectNameA = pAnswer.project_name;
