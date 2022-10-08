@@ -7,7 +7,7 @@
         "dl-template-manager": "./build/index.js"
     },
     "scripts": {
-        "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' index.ts",
+        "start": "ts-node index.ts",
         "lint": "eslint --fix --ext .ts",
         "prettify": "prettier -c --write *",
         "prepare": "husky install",

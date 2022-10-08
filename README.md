@@ -23,5 +23,5 @@ yarn add global @devslane/template-manager-cli
    3 Frontend Templates that you can choose
     - Vite React Tailwind Boilerplate
     - Vite React Tailwind Redux Boilerplate
-    - NextJs Tailwind Redux Boilerplate 
+    - NextJs Tailwind Redux Boilerplate
 ```
