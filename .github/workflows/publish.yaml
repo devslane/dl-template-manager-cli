@@ -1,14 +1,14 @@
 name: "Publish @devslane/template-manager-cli"
 
 on:
-  pull_request:
-    branches: 
-      - main
-    types: [closed]
+  push:
+    branches:
+      - main 
+    paths:
+      - 'package.json'
 
 jobs:
-  if_merged:
-    if: startsWith(github.event.pull_request.title, 'Bump Package Version') && github.event.pull_request.merged == true 
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,8 +16,11 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm run build
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Install Dependencies
+        run: npm ci
+      - name: Build Package
+        run: npm run build
+      - name: Publish if version has been updated
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
