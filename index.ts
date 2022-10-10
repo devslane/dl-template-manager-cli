@@ -13,11 +13,7 @@ shell.config.silent = true;
 
 clear();
 
-shell.echo(
-  chalk.red(
-    figlet.textSync('DevsLane', { horizontalLayout: 'full' })
-  )
-);
+shell.echo(chalk.red(figlet.textSync('DevsLane', { horizontalLayout: 'full' })));
 
 shell.echo(chalk.green('Welcome to DevsLane Template Manager'));
 

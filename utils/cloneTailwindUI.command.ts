@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 import shell from 'shelljs';
+import getPackages from '../scripts/get-package';
 import updateTailwindConfig from '../scripts/update-tailwind-config';
 
 const cloneTailwindUICommands = () => {
@@ -16,6 +17,7 @@ const cloneTailwindUICommands = () => {
     shell.mv('src/hooks', '..');
     shell.mv('src/index.scss', '..');
     shell.echo(chalk.green('COMPLETE: Cloning Shared Components'));
+    const packages = getPackages();
     shell.cd('..');
 
     // ** Delete unnecessary data
@@ -26,7 +28,7 @@ const cloneTailwindUICommands = () => {
     // ** Add required libraries
     shell.echo(chalk.green('STARTED: Dependencies ADD'));
     shell.exec('yarn add -D classnames');
-    shell.exec('yarn add formik @headlessui/react react-icons');
+    shell.exec(`yarn add ${packages}`);
 
     shell.echo(chalk.green('COMPLETE: Dependencies ADD'));
 
